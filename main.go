@@ -16,5 +16,5 @@ func main() {
 		newURL := newDomain + r.URL.Path
 		http.Redirect(w, r, newURL, http.StatusMovedPermanently)
 	})
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe(":8080", nil)
 }
